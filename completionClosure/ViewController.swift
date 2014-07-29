@@ -12,14 +12,32 @@ class ViewController: UIViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+    
+    
+        decorateUI(30.51, completionClosure: { (myFloat: CGFloat) in
+            
+            NSLog("2")
+
+                println(myFloat)
+            
+            })
+    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func decorateUI (var tempY: CGFloat,
+        completionClosure: (CGFloat -> Void))
+    {
+        NSLog("1")
+        tempY = tempY * 2
+        completionClosure(tempY)
+    }
+    
+    
 }
 
