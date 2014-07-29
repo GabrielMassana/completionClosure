@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     
     
-        decorateUI(30.51, completionClosure: { (myFloat: CGFloat) in
+        decorateUI(30.5, completionClosure: { (myFloat: CGFloat) in
             
             NSLog("2")
 
